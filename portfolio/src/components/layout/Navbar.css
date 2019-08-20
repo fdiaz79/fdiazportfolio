@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #585858 !important;
+    background-color: transparent !important;
     z-index: 2;
 }
 
@@ -7,6 +7,7 @@
     color: #9cc589 !important;
     font-size: 18px;
     font-weight: bold;   
+    border: white, solid, 5px !important; 
 }
 
 .nav-link:hover {
