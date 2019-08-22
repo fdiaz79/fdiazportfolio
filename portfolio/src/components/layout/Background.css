@@ -24,7 +24,7 @@
 .logos {
     position: absolute;
     width: 100%;
-    height: 87vh;
+    height: 89vh;
     /* top: 0; */
     left: 0;
     overflow: hidden;
@@ -34,12 +34,12 @@
     transform: scale(1.5) rotateY(180deg);
     filter: blur(2px);
     width: 80%;
-    height: 70vh;
+    height: 71vh;
     overflow: hidden;
 }
 
 .logos3{
-    top: -13%;
+    top: -12%;
     left: -13%;
     transform: scale(0.8) rotateX(180deg);
     filter: blur(4px);

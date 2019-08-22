@@ -12,8 +12,9 @@ body {
 
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-image: linear-gradient(125deg,#618287, #4e4d5c, #5c6d6f, #82637F, #585858);
-  background-size: 400%;
+  background-size: 400% 700%;
   animation: bkganimation 15s infinite;
+  /* background-size: cover; */
 }
 
 @keyframes bkganimation {
