@@ -4,19 +4,19 @@
 }
 
 .nav-link {
-    color: #9cc589 !important;
+    color: #3e4e6d !important;
     font-size: 18px;
     font-weight: bold;   
     border: white, solid, 5px !important; 
 }
 
 .nav-link:hover {
-    color: #69acb5 !important;
+    color: #ffdd3e !important;
     font-weight: bolder !important;
 }
 
 .active{
-    color: #d2e673 !important;
+    color: #69acb5 !important;
 }
 
 .navbar-brand {

@@ -19,7 +19,7 @@ class About extends Component {
                             <p>
                                 Experience with HTML, CSS, JavaScript, Bootstrap, Materialize, NodeJS, JQuery, ExpressJS, AngularJS, FireBase, MySQL MongoDB, and Access. Some Python and C++.    
                             </p>
-                            <a href="contact.html" className="btn btn-outline-success float-right" id="green-button">Contact Me</a>
+                            {/* <a href="contact.html" className="btn btn-outline-success float-right" id="green-button">Contact Me</a> */}
                         </div>
                     </div>
                 </div>
@@ -72,4 +72,4 @@ class About extends Component {
         )
     }
 }
-export default About
+export default About;

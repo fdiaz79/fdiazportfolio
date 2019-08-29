@@ -4,6 +4,7 @@ import Navbar from "./components/layout/Navbar";
 import Background from "./components/layout/Background";
 import Home from './components/home/Home';
 import About from './components/about/About';
+import Contact from './components/contact/Contact';
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/About' component={About} />
+            <Route path='/Contact' component={Contact} />
           </Switch>
         </div>
       </BrowserRouter>

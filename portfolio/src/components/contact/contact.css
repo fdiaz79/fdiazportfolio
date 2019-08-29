@@ -1,0 +1,106 @@
+.contact-logos{    
+    display: inline;
+    max-width: 35px;
+    margin: 2px 20px;
+    position: relative;
+    bottom: 2px;    
+}
+
+section{
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    overflow: hidden;
+    /* margin-top: 100px; */
+    top: 100px;
+}
+section .scroll{
+    width: 100%;
+    display: flex;
+    background: #F3F2EF;
+    opacity: .8;
+    border: 1px solid #4595a4;
+    padding: 3px 2px 0px 2px;
+}
+
+section .scroll div{
+    white-space: nowrap;
+    animation: moveLeft 20s linear 1;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    position: relative;
+    left: 30%;
+}
+
+@keyframes moveLeft{
+    0%{
+        transform: translateX(190%);
+    }
+    100%{
+        transform: translateX(-180%);
+    }
+}
+
+#social-text{
+    margin-right: 5%
+}
+
+.blue-button {
+    font-weight: bold;
+    border: 2px #3e4e6d solid;
+    color: #3e4e6d;
+}
+.blue-button:hover{
+    color: #F3F2EF;
+    background: #3e4e6d;
+    border: 2px #3e4e6d solid;
+}
+
+.container{
+    max-width: 90%;
+}
+.accordion{
+    opacity: .8;
+}
+
+.card-header{
+    padding: 2px;
+    background: #F3F2EF;
+    opacity: .8;
+}
+
+button.btn {
+    padding: 2px;
+    background: #F3F2EF;
+    opacity: .8;
+    text-decoration: none;
+}
+button.btn span{
+    font-size: 12px;
+    font-style: oblique;
+    margin: 0%;
+    padding: 0%;
+    color: #3e4e6d;
+    font-weight: bold;
+    
+}
+
+.container-margin{
+    margin-top: 10px;
+}
+
+.form-control{
+    background: #F3F2EF;
+    opacity: .8;
+    font-size: 12px;
+    
+}
+::placeholder{
+    color: #3e4e6d;
+}
+
+.card-body{
+    background: #F3F2EF;
+    opacity: .8;
+    font-size: 12px;
+}

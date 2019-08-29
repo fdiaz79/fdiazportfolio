@@ -9,8 +9,8 @@
 
 #wd-title {
     
-    color: #d2e673;
-    text-shadow: 3px 3px 5px #69acb5;
+    color: #3e4e6d;
+    text-shadow: 3px 3px 5px #ffdd3e;
     font-weight: bolder;
     display: block;
     font-size: 40px;
@@ -22,7 +22,7 @@
 
 #wd-paragraph {
     font-size: 30px; 
-    color: #9cc589;
+    color: #4595A4;
     /* color: transparent; */
     animation: changecolor 3s 1;  
     font-weight: bold;  
@@ -31,13 +31,16 @@
 @keyframes appear {
     0%{
         margin-bottom: -50px;
+        font-size: 20px;
     }
     30%{
         letter-spacing: 13px;
+        font-size: 40px;
         margin-bottom: -50px;
     }
     60%{
         letter-spacing: 5px;
+        font-size: 30px;
         margin-bottom: -50px;
     }
     80%{

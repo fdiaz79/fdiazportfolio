@@ -19,7 +19,7 @@ const Navbar = () => {
                     <Link to = "/" className="nav-item nav-link active ml-4">Home <span className="sr-only">(current)</span></Link>
                     <Link to="/About" className="nav-item nav-link ml-4">About</Link>
                     <Link to="/" className="nav-item nav-link ml-4">Portfolio</Link>
-                    <Link to="/" className="nav-item nav-link ml-4">Contact</Link>
+                    <Link to="/Contact" className="nav-item nav-link ml-4">Contact</Link>
                 </div>
                 <SignedInLinks />
             </div>
