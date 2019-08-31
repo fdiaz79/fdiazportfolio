@@ -53,9 +53,9 @@ hr{
 }
 
 #img-profile {
-    max-height: 95px;
-    max-width: 90px;
-    margin: auto;
+    /* max-height: 115px; */
+    max-width: 150px;
+    margin-left: 30%;
 }
 
 .first-letter {
@@ -64,6 +64,7 @@ hr{
 
 .card-title {
     font-weight: bold;
+    letter-spacing: 6px;
 }
 
 #green-button {
@@ -97,6 +98,10 @@ hr{
     margin: auto;
     top: -3px;
     left: 3px
+}
+
+.about-text {
+    font-size: 16px;
 }
 
 .card-text li {

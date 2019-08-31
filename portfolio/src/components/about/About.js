@@ -7,20 +7,22 @@ class About extends Component {
             <div className="row" id="about-content">
                 <div className="col-sm-5" id="card-div">
                     <div className="card" id="about-card">
-                        <img className="card-img-top rounded-circle" id="img-profile" src="/images/profile1.jpg" alt="Card image cap" />
-                        <hr />
                         <div className="card-body text-fade-in">
                             <h5 className="card-title">
                                 <span className="first-letter">A</span>BOUT <span className="first-letter"> M</span>E
+                                <img className="card-img-top" id="img-profile" src="/images/profile1.jpg" alt="Card image cap" />
+
                             </h5>
-                            <p className="card-text">
+                            <hr />
+                            <p className="card-text about-text">
                                 Front and Back End Web developer with a background in semi-professional singing, office managing and customer service. Strong computer hardware knowledgement. Passionate about learning about new technologies and tools, eager for new challenges and great team player.
                             </p>
-                            <p>
+                            <p className="about-text">
                                 Experience with HTML, CSS, JavaScript, Bootstrap, Materialize, NodeJS, JQuery, ExpressJS, AngularJS, FireBase, MySQL MongoDB, and Access. Some Python and C++.    
                             </p>
                             {/* <a href="contact.html" className="btn btn-outline-success float-right" id="green-button">Contact Me</a> */}
                         </div>
+                        {/* <img className="card-img-top" id="img-profile" src="/images/profile1.jpg" alt="Card image cap" /> */}
                     </div>
                 </div>
                 <div className="col-sm-7" id="bars-div">
