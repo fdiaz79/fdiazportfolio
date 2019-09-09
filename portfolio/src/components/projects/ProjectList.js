@@ -3,7 +3,7 @@ import ProjectSummary from './ProjectSummary';
 
 const ProjectList = () => {
     return(
-        <div className=" row project-list">
+        <div className="row">
             <ProjectSummary />
             <ProjectSummary />
             <ProjectSummary />

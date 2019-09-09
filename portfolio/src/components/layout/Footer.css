@@ -1,0 +1,46 @@
+.contact-logos{    
+    display: inline;
+    max-width: 35px;
+    margin: 2px 20px;
+    position: relative;
+    bottom: 2px;    
+}
+
+section{
+    position: fixed;
+    width: 100%;
+    /* height: 100vh; */
+    overflow: hidden;
+    /* margin-top: 100px; */
+    bottom: 0%;
+}
+section .scroll{
+    width: 100%;
+    display: flex;
+    background: #F3F2EF;
+    opacity: .8;
+    border: 1px solid #4595a4;
+    padding: 3px 2px 0px 2px;
+}
+
+section .scroll div{
+    white-space: nowrap;
+    animation: moveLeft 20s linear 1;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    position: relative;
+    left: 30%;
+}
+
+@keyframes moveLeft{
+    0%{
+        transform: translateX(190%);
+    }
+    100%{
+        transform: translateX(-180%);
+    }
+}
+
+#social-text{
+    margin-right: 5%
+}

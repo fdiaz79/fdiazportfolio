@@ -4,6 +4,7 @@ import React from 'react';
 const MessageList = () => {
     return(
         <div className="accordion" id="message-list">
+            <h5>MESSAGE LIST</h5>
             <div className="card" >
                 <div className="card-header" id="headingOne">
                         <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="false" aria-controls="collapseMessage">
