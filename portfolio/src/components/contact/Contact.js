@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import './contact.css';
 import AddMessage from './AddMessage';
 import MessageList from './MessageList';
+import { connect } from 'react-redux';
 
 
 class Contact extends Component {
     render () {
+        // console.log(this.props);
+        const { messages } = this.props;
         return(
             <div className="contact-container">
                 <div className="row">
@@ -15,7 +18,7 @@ class Contact extends Component {
                 <div className="col-sm-6"> 
                     <div className="row">
                         <div className="container container-margin">
-                            <MessageList />
+                            <MessageList messages={messages} />
                         </div>
                         </div>
                     </div>
@@ -25,4 +28,9 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+const mapStateToProps = (state) => {
+    return{
+        messages: state.message.messages
+    }
+}
+export default connect(mapStateToProps)(Contact);

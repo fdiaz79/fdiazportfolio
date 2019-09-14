@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProjectSummary.css';
 
-const ProjectSummary = () => {
+const ProjectSummary = ({project}) => {
     return (
         <div className="col-6 col-lg-2 card-cont">
             <div className="proj-card middle">
@@ -10,12 +10,12 @@ const ProjectSummary = () => {
                 </div>
                 <div className="back">
                     <div className="proj-desc middle">
-                        <p>TITLE</p>
-                        <p>DESCRIPTION</p>
-                        <p>TECH USED</p>
+                        <h5>{project.title}</h5>
+                        <p>{project.description} </p>
+                        <p>{project.tech} </p>
                         <div className="sm">
-                            <p>Link to project</p>
-                            <p>Link to code</p>
+                            <p>{project.link} </p>
+                            <p>{project.hub} </p>
                         </div>
                     </div>
                 </div>

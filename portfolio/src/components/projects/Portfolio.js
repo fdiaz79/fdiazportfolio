@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import ProjectList from './ProjectList';
 import './ProjectList.css';
-import '../layout/Footer';
-import Footer from '../layout/Footer';
+import { connect } from 'react-redux';
 
 class Portfolio extends Component {
     render() {
+        // console.log(this.props);
+        const { projects } = this.props;
         return(
             <div>
                 <div className="portfolio container">
@@ -13,16 +14,22 @@ class Portfolio extends Component {
                         <div className="col-1">
                         </div>
                         <div className="col-10 project-list">
-                            <ProjectList />
+                            <ProjectList projects={projects} />
                         </div>
                         <div className="col-1">
                         </div>
                     </div>
                 </div>
-                {/* <Footer /> */}
+                
             </div>
         )
     }
 }
 
-export default Portfolio;
+const mapStateToProps = (state) => {
+    return{
+        projects: state.project.projects
+    }
+}
+
+export default connect(mapStateToProps)(Portfolio);
