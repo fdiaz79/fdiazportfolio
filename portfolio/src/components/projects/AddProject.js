@@ -7,7 +7,8 @@ class AddProject extends Component {
         name: '',
         link: '',
         image:'',
-        hub:''
+        hub:'',
+        relevance:''
     }
     handleChange = (e) => {
         this.setState({
@@ -44,11 +45,17 @@ class AddProject extends Component {
                         </div>
                     </div>   
                     <div className="form-group row">
-                        <label htmlFor="hub" className="col-sm-2 col-form-label col-form-label-sm" id="url-label">Repo url:</label>
+                        <label htmlFor="hub" className="col-sm-2 col-form-label col-form-label-sm" id="hub-label">Repo url:</label>
                         <div className="col-sm-10">
                             <input type="text" required className="form-control form-control-sm" id="hub" onChange={this.handleChange} />
                         </div>
-                    </div>                                         
+                    </div>  
+                    <div className="form-group row">
+                        <label htmlFor="relevance" className="col-sm-2 col-form-label col-form-label-sm" id="relevance-label">Relevance:</label>
+                        <div className="col-sm-10">
+                            <input type="number" required className="form-control form-control-sm" id="relevance" onChange={this.handleChange} />
+                        </div>
+                    </div>                                       
                     <button type="submit" className="btn btn-outline-success float-right green-button" id="projectSubmit">Submit</button>        
                 </form>           
             </div>
