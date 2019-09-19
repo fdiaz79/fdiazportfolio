@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Sign.css';
-import $ from 'jquery';
+
 
 class SignIn extends Component {
     state={
