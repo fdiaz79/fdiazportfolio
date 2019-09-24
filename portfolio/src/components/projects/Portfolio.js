@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import ProjectList from './ProjectList';
 import './ProjectList.css';
 import { connect } from 'react-redux';
+import { firestoreConnect } from 'react-redux-firebase';
+import { compose } from 'redux';
 
 class Portfolio extends Component {
     render() {
@@ -27,9 +29,15 @@ class Portfolio extends Component {
 }
 
 const mapStateToProps = (state) => {
+    console.log(state);
     return{
-        projects: state.project.projects
+        projects: state.firestore.ordered.projects
     }
 }
 
-export default connect(mapStateToProps)(Portfolio);
+export default compose(
+    connect(mapStateToProps),
+    firestoreConnect([{ 
+        collection: 'projects' 
+    }])
+)(Portfolio);
