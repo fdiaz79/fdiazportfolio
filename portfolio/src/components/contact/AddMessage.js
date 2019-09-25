@@ -6,15 +6,34 @@ class AddMessage extends Component {
     state={
         name: '',
         email: '',
-        message: ''
+        message: '',
+        createdAt: '',
+        label: '',
+        idLabel: ''
     }
     handleChange = (e) => {
+        var day = new Date();
+        var dayString = day.toString();
+        console.log(dayString);
         this.setState({
-            [e.target.id]: e.target.value
+            [e.target.id]: e.target.value,
+            createdAt: dayString,
+            label: dayString,
+            idLabel: '#'+dayString
         })
+        console.log(this.state);
     }
     handleSubmit = (e) => {
         e.preventDefault();
+        // var day = new Date();
+        // var dayString = day.toString();
+        // console.log(dayString);
+        // this.setState({
+        //     createdAt: 'dayString',
+        //     label: 'dayString',
+        //     idLabel: '#'+'dayString'
+        // })
+        console.log(this.state);
         this.props.createMessage(this.state);
     }
     render() {

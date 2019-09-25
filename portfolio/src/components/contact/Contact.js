@@ -3,12 +3,15 @@ import './contact.css';
 import AddMessage from './AddMessage';
 import MessageList from './MessageList';
 import { connect } from 'react-redux';
+import { firestoreConnect } from 'react-redux-firebase';
+import { compose } from 'redux';
 
 
 class Contact extends Component {
     render () {
-        // console.log(this.props);
+        console.log(this.props);
         const { messages } = this.props;
+        console.log (messages);
         return(
             <div className="contact-container">
                 <div className="row">
@@ -29,8 +32,15 @@ class Contact extends Component {
 }
 
 const mapStateToProps = (state) => {
+    console.log(state);
     return{
-        messages: state.message.messages
+        messages: state.firestore.ordered.messages
     }
 }
-export default connect(mapStateToProps)(Contact);
+
+export default compose(
+    connect(mapStateToProps),
+    firestoreConnect([{
+        collection: 'messages'
+    }])
+) (Contact);

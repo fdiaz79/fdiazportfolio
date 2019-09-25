@@ -7,8 +7,9 @@ import { compose } from 'redux';
 
 class Portfolio extends Component {
     render() {
-        // console.log(this.props);
+        console.log(this.props);
         const { projects } = this.props;
+        console.log(projects);
         return(
             <div>
                 <div className="portfolio container">
