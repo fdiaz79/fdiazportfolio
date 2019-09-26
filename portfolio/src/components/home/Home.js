@@ -6,7 +6,7 @@ class Home extends Component {
         return (
             <div className="index-jumbotron">
                 <h1 id="wd-title">
-                    <span class="first-letter">W</span>EB <span class="first-letter">D</span>EVELOPMENT <span class="first-letter">M</span>ADE <span class="first-letter">S</span>IMPLE.
+                    <span className="first-letter">W</span>EB <span className="first-letter">D</span>EVELOPMENT <span className="first-letter">M</span>ADE <span className="first-letter">S</span>IMPLE.
                 </h1>
                 <h5 id="wd-paragraph">
                     For elegant designs and powerful applications.
