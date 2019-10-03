@@ -6,15 +6,16 @@ const ProjectSummary = ({project}) => {
         <div className="col-6 col-lg-2 card-cont">
             <div className="proj-card middle">
                 <div className="front">
-                    <img className="proj-img img-fluid" src="/images/wePlan.png" alt="project image"></img>
+                    <img className="proj-img img-fluid" src="/images/wePlan.png" alt="project"></img>
                 </div>
                 <div className="back">
                     <div className="proj-desc middle">
-                        <h5>{project.title}</h5>
+                        <h5>{project.name}</h5>
                         <p>{project.description} </p>
                         <p>{project.tech} </p>
                         <div className="sm">
                             <p>{project.link} </p>
+                            <br></br>
                             <p>{project.hub} </p>
                         </div>
                     </div>

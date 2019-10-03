@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './Sign.css';
+import { Link } from 'react-router-dom';
 
 class SignUp extends Component {
     state={
@@ -21,24 +23,18 @@ class SignUp extends Component {
             <div className="container">
                 <form className="signInForm" onSubmit={this.handleSubmit}>
                     <h5>SIGN UP</h5>
-                    <div className="form-group">
-                        <label htmlFor="email">Email address</label>
-                        <input type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" onChange={this.handleChange} />
-                        <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <input type="email" id="email" className="txtb" placeholder="Enter Email" onChange={this.handleChange} />
+                    <input type="password" id="password" className="txtb" placeholder="Enter Password" onChange={this.handleChange} />
+                    <input type="text" id="firstName" className="txtb" placeholder="First Name" onChange={this.handleChange} />
+                    <input type="text" id="lastName" className="txtb" placeholder="Last Name" onChange={this.handleChange} />
+                    <input type="submit" className="logbtn prettyBut" value="Sign Up" />
+                    <div className="bottom-text">
+                        Already have an account? <Link to="/signin">Sign In </Link>
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="password">Password</label>
-                        <input type="password" className="form-control" id="password" placeholder="Password" onChange={this.handleChange} />
+                    <div className="loginMessage">
+                        authError!!!
+                        {/* { authError ? <p>{authError}</p> : null } */}
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="firstName">First Name</label>
-                        <input type="firstName" className="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="Enter firstName" onChange={this.handleChange} />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="lastName">Last Name</label>
-                        <input type="lastName" className="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Enter lastName" onChange={this.handleChange} />
-                    </div>
-                    <button type="submit" className="btn btn-primary">Sign Up</button>
                 </form>                
             </div>
         )

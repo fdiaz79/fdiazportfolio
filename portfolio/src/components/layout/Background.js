@@ -9,98 +9,98 @@ const Background = () => {
             </section>
             <div className="logos">
                 <div>
-                    <img src="/images/html.png" className="bkg-img"></img>
+                    <img src="/images/html.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/css3.png" className="bkg-img"></img>
+                    <img src="/images/css3.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/javascript.png" className="bkg-img"></img>
+                    <img src="/images/javascript.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/jquery.png" className="bkg-img"></img>
+                    <img src="/images/jquery.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/bootstrap.png" className="bkg-img"></img>
+                    <img src="/images/bootstrap.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/react.png" className="bkg-img"></img>
+                    <img src="/images/react.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/mongodb.png" className="bkg-img"></img>
+                    <img src="/images/mongodb.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/nodejs.png" className="bkg-img"></img>
+                    <img src="/images/nodejs.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/expressjs.png" className="bkg-img"></img>
+                    <img src="/images/expressjs.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/firebase.png" className="bkg-img"></img>
+                    <img src="/images/firebase.png" className="bkg-img" alt="Logo"></img>
                 </div>
             </div>
             <div className="logos logos2">
                 <div>
-                    <img src="/images/react.png" className="bkg-img"></img>
+                    <img src="/images/react.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/css3.png" className="bkg-img"></img>
+                    <img src="/images/css3.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/bootstrap.png" className="bkg-img"></img>
+                    <img src="/images/bootstrap.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/javascript.png" className="bkg-img"></img>
+                    <img src="/images/javascript.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/html.png" className="bkg-img"></img>
+                    <img src="/images/html.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/mongodb.png" className="bkg-img"></img>
+                    <img src="/images/mongodb.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/nodejs.png" className="bkg-img"></img>
+                    <img src="/images/nodejs.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/expressjs.png" className="bkg-img"></img>
+                    <img src="/images/expressjs.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/firebase.png" className="bkg-img"></img>
+                    <img src="/images/firebase.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/jquery.png" className="bkg-img"></img>
+                    <img src="/images/jquery.png" className="bkg-img" alt="Logo"></img>
                 </div>
             </div>
             <div className="logos logos3">
                 <div>
-                    <img src="/images/firebase.png" className="bkg-img"></img>
+                    <img src="/images/firebase.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/html.png" className="bkg-img"></img>
+                    <img src="/images/html.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/css3.png" className="bkg-img"></img>
+                    <img src="/images/css3.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/javascript.png" className="bkg-img"></img>
+                    <img src="/images/javascript.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/jquery.png" className="bkg-img"></img>
+                    <img src="/images/jquery.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/bootstrap.png" className="bkg-img"></img>
+                    <img src="/images/bootstrap.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/react.png" className="bkg-img"></img>
+                    <img src="/images/react.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/mongodb.png" className="bkg-img"></img>
+                    <img src="/images/mongodb.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/nodejs.png" className="bkg-img"></img>
+                    <img src="/images/nodejs.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/expressjs.png" className="bkg-img"></img>
+                    <img src="/images/expressjs.png" className="bkg-img" alt="Logo"></img>
                 </div>
             </div>
         </div>

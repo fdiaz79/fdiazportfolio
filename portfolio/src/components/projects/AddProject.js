@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createProject } from '../../store/actions/projectActions';
+import './AddProject.css';
 
 class AddProject extends Component {
     state={
         name: '',
+        tech: '',
         link: '',
         image:'',
         hub:'',
@@ -33,6 +35,12 @@ class AddProject extends Component {
                         </div>
                     </div>
                     <div className="form-group row">
+                        <label htmlFor="tech" className="col-sm-2 col-form-label col-form-label-sm" id="tech-label">Technologies:</label>
+                        <div className="col-sm-10">
+                            <input type="text" required className="form-control form-control-sm" id="tech" onChange={this.handleChange} />
+                        </div>
+                    </div>
+                    <div className="form-group row">
                         <label htmlFor="link" className="col-sm-2 col-form-label col-form-label-sm" id="url-label">Project url:</label>
                         <div className="col-sm-10">
                             <input type="text" required className="form-control form-control-sm" id="link" onChange={this.handleChange}/>
@@ -55,8 +63,9 @@ class AddProject extends Component {
                         <div className="col-sm-10">
                             <input type="number" required className="form-control form-control-sm" id="relevance" onChange={this.handleChange} />
                         </div>
-                    </div>                                       
-                    <button type="submit" className="btn btn-outline-success float-right green-button" id="projectSubmit">Submit</button>        
+                    </div>                
+                    <button type="submit" className="btn float-right prettyBut" id="projectSubmit">Submit</button>                       
+                    {/* <button type="submit" className="float-right prettyBut" id="projectSubmit"> Submit </button>         */}
                 </form>           
             </div>
         )

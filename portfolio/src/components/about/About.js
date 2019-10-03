@@ -10,7 +10,7 @@ class About extends Component {
                         <div className="card-body text-fade-in">
                             <h5 className="card-title">
                                 <span className="first-letter">A</span>BOUT <span className="first-letter"> M</span>E
-                                <img className="card-img-top" id="img-profile" src="/images/profile1.jpg" alt="Card image cap" />
+                                <img className="card-img-top" id="img-profile" src="/images/profile1.jpg" alt="Card cap" />
 
                             </h5>
                             <hr />
