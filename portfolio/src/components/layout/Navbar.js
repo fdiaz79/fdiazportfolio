@@ -5,8 +5,12 @@ import './Navbar.css';
 import { connect } from 'react-redux';
 
 
-const Navbar = () => {
+const Navbar = (props) => {
+    const { auth } = props;
+    // console.log(auth);
+    const links = auth.uid ? <SignedInLinks /> : null;
     return (
+        
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <Link to="/signin" className="navbar-brand">
                 <img src='/images/f-logo.png' width="80" height="60" className="d-inline-block" alt=""></img>
@@ -22,17 +26,17 @@ const Navbar = () => {
                     <NavLink to="/Portfolio" className="nav-item nav-link ml-4">Portfolio</NavLink>
                     <NavLink to="/Contact" className="nav-item nav-link ml-4">Contact</NavLink>
                 </div>
-                <SignedInLinks />
+                { links }
+                {/* <SignedInLinks /> */}
             </div>
         </nav>
     )
 }
 
 const mapStateToProps = (state) => {
-     console.log(state);
-     return{
-
-     }
+    return{
+        auth: state.firebase.auth
+    }
 }
 
 export default connect(mapStateToProps)(Navbar);

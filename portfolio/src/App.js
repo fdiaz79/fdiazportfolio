@@ -10,6 +10,7 @@ import Footer from './components/layout/Footer';
 import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 import AddProject from './components/projects/AddProject';
+import DeleteProject from './components/projects/DeleteProject';
 
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
             <Route path='/signin' component={SignIn} />
             <Route path='/signup' component={SignUp} />
             <Route path='/newProject' component={AddProject} />
+            <Route path='/deleteProject' component={DeleteProject} />
           </Switch>
           <Footer />
         </div>

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Sign.css';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+
 
 class SignUp extends Component {
     state={
@@ -19,6 +21,8 @@ class SignUp extends Component {
         console.log(this.state);
     }
     render() {
+        const { auth } = this.props;
+        if (auth.uid) return <Redirect to='/' />
         return (
             <div className="container">
                 <form className="signInForm" onSubmit={this.handleSubmit}>
@@ -32,7 +36,7 @@ class SignUp extends Component {
                         Already have an account? <Link to="/signin">Sign In </Link>
                     </div>
                     <div className="loginMessage">
-                        authError!!!
+                        
                         {/* { authError ? <p>{authError}</p> : null } */}
                     </div>
                 </form>                
@@ -41,4 +45,10 @@ class SignUp extends Component {
     }
 }
 
-export default SignUp;
+const mapStateToProps = (state) => {
+    return {
+        auth: state.firebase.auth
+    }
+}
+
+export default connect(mapStateToProps)(SignUp);
