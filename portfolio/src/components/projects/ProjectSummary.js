@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProjectSummary.css';
+import moment from 'moment';
 
 const ProjectSummary = ({project}) => {
     return (
@@ -13,10 +14,12 @@ const ProjectSummary = ({project}) => {
                         <h5 className="title">{project.name}</h5>
                         <p className="descript">{project.description} </p>
                         <p className="tech">TECHNOLOGIES: <br /> {project.tech} </p>
-                        <div className="sm">
+                        <div className="sm">                          
+                            <p>Added on: {moment(project.createdAt.toDate()).calendar()} </p>
+                            <br></br>
                             <p>{project.link} </p>
                             <br></br>
-                            <p>{project.hub} </p>
+                            <p>{project.hub} </p>                            
                         </div>
                     </div>
                 </div>
