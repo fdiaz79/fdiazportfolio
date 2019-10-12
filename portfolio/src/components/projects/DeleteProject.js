@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
+
 class DeleteProject extends Component {
     render() {
         const { auth } = this.props;

@@ -17,7 +17,7 @@ class AddMessage extends Component {
         console.log(dayString);
         this.setState({
             [e.target.id]: e.target.value,
-            createdAt: dayString,
+            // createdAt: dayString,
             label: dayString,
             idLabel: '#'+dayString
         })
@@ -25,16 +25,18 @@ class AddMessage extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-        // var day = new Date();
-        // var dayString = day.toString();
-        // console.log(dayString);
-        // this.setState({
-        //     createdAt: 'dayString',
-        //     label: 'dayString',
-        //     idLabel: '#'+'dayString'
-        // })
+        
         console.log(this.state);
         this.props.createMessage(this.state);
+        this.setState({
+            name: '',
+            email: '',
+            message: '',
+            createdAt: '',
+            label: '',
+            idLabel: ''
+        });
+        document.getElementById("message-form").reset();
     }
     render() {
         return(
@@ -55,7 +57,7 @@ class AddMessage extends Component {
                             <label htmlFor="message">Message:</label>
                             <textarea className="form-control" id="message" rows="5" required onChange={this.handleChange} ></textarea>
                         </div>
-                        <button type="submit" className="btn btn-outline-info float-right blue-button" id="contactSubmit">Submit</button>
+                        <button type="submit" className="btn float-right prettyBut" id="contactSubmit">Submit</button>
                     </form>
                 </div>
             </div>

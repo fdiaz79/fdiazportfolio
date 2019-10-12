@@ -2,6 +2,7 @@ import React from 'react';
 import './ProjectSummary.css';
 import moment from 'moment';
 
+
 const ProjectSummary = ({project}) => {
     return (
         <div className="col-6 col-lg-2 card-cont">
@@ -17,9 +18,11 @@ const ProjectSummary = ({project}) => {
                         <div className="sm">                          
                             <p>Added on: {moment(project.createdAt.toDate()).calendar()} </p>
                             <br></br>
-                            <p>{project.link} </p>
-                            <br></br>
-                            <p>{project.hub} </p>                            
+                            <p className="logoLink">
+                                <a href={project.link} target="_blank" rel="noopener noreferrer"> <img width="30px" src="/images/navigate.jpg" /> </a>
+                                <a href={project.hub} target="_blank" rel="noopener noreferrer"> <img width="30px" src="/images/github.png" /> </a>
+                            </p>
+                                                      
                         </div>
                     </div>
                 </div>

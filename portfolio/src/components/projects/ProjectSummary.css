@@ -45,22 +45,23 @@
     transform: perspective(600px) rotateY(0deg);
 }
 .back{
-    background: #F3F2EF;
+    background: #4595a4;
     opacity: 1;
     transform: perspective(600px) rotateY(180deg);
     max-width: 94%;
 }
 
-.proj-desc{
-    color: #3E4E6D;
+.proj-desc{    
     width: 100%;
     font-size: 0.7em;
+    color: #f2f2ef;
 }
 
 .proj-desc .title{
+    color: #ffdd3e;
     text-align: center;
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     font-weight: 700;
 }
 
@@ -76,6 +77,7 @@
 .sm{
     margin: 20px 0;
     overflow: hidden;
+    margin: 5%;
 }
 
 .sm p{
@@ -84,9 +86,14 @@
     height: 40px; */
     justify-content: center;
     align-items: center;
-    color: #3E4E6D;
+    /* color: #f2f2ef; */
     transition: 1s;
     
+}
+.logoLink {
+    position: absolute;
+    bottom: 1px;
+    right: 2px;
 }
 
 .proj-card:hover > .front{
