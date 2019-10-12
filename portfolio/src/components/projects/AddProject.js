@@ -28,6 +28,7 @@ class AddProject extends Component {
         e.preventDefault();
         // console.log(this.state);
         this.props.createProject(this.state);
+        this.props.history.push('/Portfolio'); //Redirects to portfolio after submitting the new project
     }
     render() {
         const { auth } = this.props
