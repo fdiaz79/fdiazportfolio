@@ -6,13 +6,13 @@ const ProjectSummary = ({project}) => {
         <div className="col-6 col-lg-2 card-cont">
             <div className="proj-card middle">
                 <div className="front">
-                    <img className="proj-img img-fluid" src="/images/wePlan.png" alt="project"></img>
+                    <img className="proj-img img-fluid" src={project.image} alt="project"></img>
                 </div>
                 <div className="back">
                     <div className="proj-desc middle">
-                        <h5>{project.name}</h5>
-                        <p>{project.description} </p>
-                        <p>{project.tech} </p>
+                        <h5 className="title">{project.name}</h5>
+                        <p className="descript">{project.description} </p>
+                        <p className="tech">TECHNOLOGIES: <br /> {project.tech} </p>
                         <div className="sm">
                             <p>{project.link} </p>
                             <br></br>

@@ -46,16 +46,32 @@
 }
 .back{
     background: #F3F2EF;
-    opacity: .8;
+    opacity: 1;
     transform: perspective(600px) rotateY(180deg);
     max-width: 94%;
 }
 
 .proj-desc{
     color: #3E4E6D;
-    text-align: center;
     width: 100%;
     font-size: 0.7em;
+}
+
+.proj-desc .title{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-weight: 700;
+}
+
+.proj-desc .descript{
+    text-align: justify;
+    margin: 5%;
+}
+
+.proj-desc .tech{
+    text-align: justify;
+    margin: 5%;
 }
 .sm{
     margin: 20px 0;

@@ -7,6 +7,7 @@ import './AddProject.css';
 class AddProject extends Component {
     state={
         name: '',
+        description: '',
         tech: '',
         link: '',
         image:'',
@@ -16,6 +17,11 @@ class AddProject extends Component {
     handleChange = (e) => {
         this.setState({
             [e.target.id]: e.target.value
+        })
+    }
+    imageChange = (e) => {
+        this.setState({
+            [e.target.id]: "/images/"+ e.target.value
         })
     }
     handleSubmit = (e) => {
@@ -38,6 +44,12 @@ class AddProject extends Component {
                         </div>
                     </div>
                     <div className="form-group row">
+                        <label htmlFor="description" className="col-sm-2 col-form-label col-form-label-sm" id="description-label">Description:</label>
+                        <div className="col-sm-10">
+                            <input type="text" required className="form-control form-control-sm" id="description" onChange={this.handleChange} />
+                        </div>
+                    </div>
+                    <div className="form-group row">
                         <label htmlFor="tech" className="col-sm-2 col-form-label col-form-label-sm" id="tech-label">Technologies:</label>
                         <div className="col-sm-10">
                             <input type="text" required className="form-control form-control-sm" id="tech" onChange={this.handleChange} />
@@ -52,7 +64,7 @@ class AddProject extends Component {
                     <div className="form-group row">
                         <label htmlFor="image" className="col-sm-2 col-form-label col-form-label-sm" id="file-label">Project image file:</label>
                         <div className="col-sm-10">
-                            <input type="text" required className="form-control form-control-sm" id="image" onChange={this.handleChange} />
+                            <input type="text" required className="form-control form-control-sm" id="image" onChange={this.imageChange} />
                         </div>
                     </div>   
                     <div className="form-group row">
