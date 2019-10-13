@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import DeleteList from './DeleteList';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
 
 class DeleteProject extends Component {
     render() {
-        const { auth } = this.props;
+        const { projects, auth } = this.props;
         if (!auth.uid) return <Redirect to='/signin' />
         return(
             <div>
@@ -14,13 +15,12 @@ class DeleteProject extends Component {
                         <div className="col-1">
                         </div>
                         <div className="col-10 project-list">
-                            List of projects
+                            <DeleteList projects={projects} />
                         </div>
                         <div className="col-1">
                         </div>
                     </div>
-                </div>
-                
+                </div>                
             </div>
         )
     }
@@ -28,7 +28,8 @@ class DeleteProject extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        auth: state.firebase.auth
+        auth: state.firebase.auth,
+        projects: state.firestore.ordered.projects
     }
 }
 

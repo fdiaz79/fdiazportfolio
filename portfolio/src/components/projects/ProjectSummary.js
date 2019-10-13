@@ -19,8 +19,8 @@ const ProjectSummary = ({project}) => {
                             <p>Added on: {moment(project.createdAt.toDate()).calendar()} </p>
                             <br></br>
                             <p className="logoLink">
-                                <a href={project.link} target="_blank" rel="noopener noreferrer"> <img width="30px" src="/images/navigate.jpg" /> </a>
-                                <a href={project.hub} target="_blank" rel="noopener noreferrer"> <img width="30px" src="/images/github.png" /> </a>
+                                <a href={project.link} target="_blank" rel="noopener noreferrer"> <img width="30px" src="/images/navigate.jpg" alt="navigate" /> </a>
+                                <a href={project.hub} target="_blank" rel="noopener noreferrer"> <img width="30px" src="/images/github.png" alt="github" /> </a>
                             </p>
                                                       
                         </div>
