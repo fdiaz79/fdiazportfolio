@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fdiazportfolio/static/css/main.e1c28549.chunk.css",
+    "main.js": "/fdiazportfolio/static/js/main.40692dc6.chunk.js",
+    "main.js.map": "/fdiazportfolio/static/js/main.40692dc6.chunk.js.map",
+    "runtime~main.js": "/fdiazportfolio/static/js/runtime~main.ab1857d8.js",
+    "runtime~main.js.map": "/fdiazportfolio/static/js/runtime~main.ab1857d8.js.map",
+    "static/js/2.982bb0bf.chunk.js": "/fdiazportfolio/static/js/2.982bb0bf.chunk.js",
+    "static/js/2.982bb0bf.chunk.js.map": "/fdiazportfolio/static/js/2.982bb0bf.chunk.js.map",
+    "index.html": "/fdiazportfolio/index.html",
+    "precache-manifest.2c25dbfaad15275320075c4df5d13eb5.js": "/fdiazportfolio/precache-manifest.2c25dbfaad15275320075c4df5d13eb5.js",
+    "service-worker.js": "/fdiazportfolio/service-worker.js",
+    "static/css/main.e1c28549.chunk.css.map": "/fdiazportfolio/static/css/main.e1c28549.chunk.css.map"
+  }
+}
