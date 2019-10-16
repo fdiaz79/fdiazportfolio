@@ -4,51 +4,64 @@
     text-decoration: none;
 }
 
-
-/* .middle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
 .card-cont{
     height: 40vh;
+    margin: 0%;
+    padding: 0%;
+    display: table-cell;
+    /* flex: 1 1 auto; */
+}
+.project-list{
+    margin-top: 10%;
+    margin-bottom: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;    
+    width: 100%;
+    display: table;
+    table-layout: fixed;
 }
 
 .proj-card{
     cursor: pointer;
-    /* width: 100%;
-    height: auto; */
-    /* width: 30vw;
-    max-height: 100%; */
-    /* height: 75vh; */
-}
-/* .proj-img{
-    max-width: 100%;
     
-    position: relative;
-} */
-.front, .back{
+}
+
+.front{
+    display: inline-table;
     width: 100%;
-    height: 100%; 
+    height: 81.1%; 
     overflow: hidden;
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     position: absolute;
+    left: 0%;
     transition: transform .6s;
+}
+
+.back{
+    display: inline-table;
+    width: 100%;
+    min-height: 81.1%; 
+    overflow: hidden;
+    /* backface-visibility: hidden; */
+    position: absolute;
+    left: 0%;
+    /* transition: transform .6s; */
 }
 
 .front img{
     height: 100%;
 }
 
-.front{
+/* .front{
     transform: perspective(600px) rotateY(0deg);
-}
+} */
 .back{
-    background: #4595a4;
-    opacity: 1;
-    transform: perspective(600px) rotateY(180deg);
-    max-width: 94%;
+    background: #3e4e6d;
+    opacity: 0;
+    transition: opacity 1.5s;
+    /* transform: perspective(600px) rotateY(180deg); */
+    /* max-width: 100%; */
 }
 
 .proj-desc{    
@@ -60,7 +73,7 @@
 .proj-desc .title{
     color: #ffdd3e;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-bottom: 5%;
     font-weight: 700;
 }
@@ -82,23 +95,26 @@
 
 .sm p{
     display: inline-flex;
-    /* width: 40px;
-    height: 40px; */
     justify-content: center;
     align-items: center;
-    /* color: #f2f2ef; */
-    transition: 1s;
+    /* transition: 1s; */
     
 }
 .logoLink {
     position: absolute;
     bottom: 1px;
-    right: 2px;
+    right: 5%;
 }
 
-.proj-card:hover > .front{
-    transform: perspective(600px) rotateY(-180deg);
+.logoLink a{
+    margin-left: 12%;
 }
+
+/* .proj-card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+} */
 .proj-card:hover > .back{
-    transform: perspective(600px) rotateY(0deg);
+    /* transform: perspective(600px) rotateY(0deg); */
+    opacity: 1;
+    /* border: solid 1px #f3f2ef; */
 }

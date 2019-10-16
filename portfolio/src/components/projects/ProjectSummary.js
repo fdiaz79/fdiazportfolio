@@ -5,10 +5,10 @@ import moment from 'moment';
 
 const ProjectSummary = ({project}) => {
     return (
-        <div className="col-6 col-lg-2 card-cont">
+        <div className="col-12 col-lg-3 card-cont">
             <div className="proj-card middle">
                 <div className="front">
-                    <img className="proj-img img-fluid" src={project.image} alt="project"></img>
+                    <img className="proj-img img-fluid" src={project.image} alt={project.name}></img>
                 </div>
                 <div className="back">
                     <div className="proj-desc middle">

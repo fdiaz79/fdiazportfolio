@@ -12,18 +12,11 @@ class Portfolio extends Component {
         console.log(projects);
         return(
             <div>
-                <div className="portfolio container">
-                    <div className="row">
-                        <div className="col-1">
-                        </div>
-                        <div className="col-10 project-list">
-                            <ProjectList projects={projects} />
-                        </div>
-                        <div className="col-1">
-                        </div>
-                    </div>
-                </div>
-                
+                {/* <div className="row portfolio container">                   */}
+                    {/* <div className="col-12 project-list"> */}
+                        <ProjectList projects={projects} />
+                    {/* </div>                  */}
+                {/* </div> */}
             </div>
         )
     }

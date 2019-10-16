@@ -1,4 +1,22 @@
-.project-list{
+.portfolio{
+    /* margin: 0px;
+    padding: 0px; */
+    display: table;
+    table-layout: fixed;
     margin-top: 10%;
     margin-bottom: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;    
+    width: 100%;
 }
+/* .project-list{
+    margin-top: 10%;
+    margin-bottom: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;    
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+} */
