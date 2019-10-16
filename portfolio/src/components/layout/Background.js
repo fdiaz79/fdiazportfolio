@@ -9,16 +9,16 @@ const Background = () => {
             </section>
             <div className="logos">
                 <div>
-                    <img src="/images/html.png" className="bkg-img" alt="Logo"></img>
+                    <img src="portfolioReact/images/html.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/css3.png" className="bkg-img" alt="Logo"></img>
+                    <img src="portfolioReact/images/css3.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/javascript.png" className="bkg-img" alt="Logo"></img>
+                    <img src="portfolioReact/images/javascript.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
-                    <img src="/images/jquery.png" className="bkg-img" alt="Logo"></img>
+                    <img src="portfolioReact/images/jquery.png" className="bkg-img" alt="Logo"></img>
                 </div>
                 <div>
                     <img src="/images/bootstrap.png" className="bkg-img" alt="Logo"></img>
