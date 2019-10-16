@@ -115,6 +115,6 @@
 } */
 .proj-card:hover > .back{
     /* transform: perspective(600px) rotateY(0deg); */
-    opacity: 1;
+    opacity: .8;
     /* border: solid 1px #f3f2ef; */
 }
