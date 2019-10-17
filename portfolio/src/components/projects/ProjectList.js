@@ -5,10 +5,10 @@ import './ProjectList.css';
 
 const ProjectList = ({projects}) => {
     return(
-        <div className="row portfolio">
+        <div className="row port-row">
             { projects && projects.map(project => {
-                return(
-                    <ProjectSummary project={project} key={project.id} />
+                return(                    
+                    <ProjectSummary project={project} key={project.id} />                    
                 )
             })}
         </div>

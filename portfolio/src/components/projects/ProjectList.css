@@ -10,6 +10,10 @@
     padding: 0%;    
     width: 100%;
 }
+
+.port-row{
+    margin: 2% 0;
+}
 /* .project-list{
     margin-top: 10%;
     margin-bottom: 3%;
