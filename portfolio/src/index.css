@@ -19,6 +19,9 @@ body {
   z-index: -1;
   /* background-size: cover; */
 }
+/* .App {
+  position: relative;
+} */
 
 .prettyBut{
   background-size: 200% !important;

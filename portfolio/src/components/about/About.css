@@ -130,22 +130,22 @@ hr{
 }
 
 .css {
-    width: 65%;
+    width: 75%;
     animation: css 4s;
 }
 
 .javascript {
-    width: 75%;
+    width: 85%;
     animation: javascript 4s;
 }
 
 .react {
-    width: 60%;
+    width: 75%;
     animation: react 4s;
 }
 
 .nodejs {
-    width: 50%;
+    width: 65%;
     animation: nodejs 4s;
 }
 

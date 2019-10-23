@@ -7,7 +7,7 @@ class Footer extends Component {
             <section>
                 <div className="scroll text">
                     <div>
-                        <span id="social-text1">ALSO IN SOCIAL MEDIA</span>
+                        <span id="social-text1"></span>
                         <a href="mailto:fdiaz79@gmail.com" target="_blank" rel="noopener noreferrer">
                             <img src="/images/gmail.png" className="contact-logos" alt="Logo"></img>
                         </a>
