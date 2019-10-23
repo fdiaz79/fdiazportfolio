@@ -9,7 +9,8 @@ const Navbar = (props) => {
     const { auth, profile } = props;
     // console.log(auth);
     console.log(profile.role)
-    const links = auth.uid ? <SignedInLinks /> : null;
+    // const links = auth.uid ? <SignedInLinks /> : null;
+    const links = profile.role == 'admin' ? <SignedInLinks /> : null;
     return (
         
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
