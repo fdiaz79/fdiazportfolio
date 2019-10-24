@@ -11,7 +11,7 @@ const SignedInLinks = (props) => {
         <div className="navbar-nav ml-auto">
             <NavLink to="/newProject" className="nav-item nav-link ml-4">Add New Project</NavLink>
             <NavLink to="/deleteProject" className="nav-item nav-link ml-4">Delete Project</NavLink>
-            <NavLink to="/" className="nav-item nav-link ml-4" onClick={props.signOut} >Sign Out</NavLink>
+            {/* <NavLink to="/" className="nav-item nav-link ml-4" onClick={props.signOut} >Sign Out</NavLink> */}
         </div>
     )
 }

@@ -31,8 +31,9 @@ class AddProject extends Component {
         this.props.history.push('/Portfolio'); //Redirects to portfolio after submitting the new project
     }
     render() {
-        const { auth } = this.props
-        if (!auth.uid) return <Redirect to= '/signin' />
+        // const { auth } = this.props;
+        const { profile } = this.props;
+        if (profile.role !== "admin") return <Redirect to= '/signin' />
         return (
             <div className="container">
                 <form id="project-form" onSubmit={this.handleSubmit}>
@@ -89,8 +90,10 @@ class AddProject extends Component {
 }
 
 const mapStateToProps = (state) => {
+    console.log(state);
     return{
-        auth: state.firebase.auth
+        auth: state.firebase.auth,
+        profile: state.firebase.profile
     }
 }
 

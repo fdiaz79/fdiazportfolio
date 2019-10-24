@@ -6,8 +6,9 @@ import { Redirect } from 'react-router-dom';
 
 class DeleteProject extends Component {
     render() {
-        const { projects, auth } = this.props;
-        if (!auth.uid) return <Redirect to='/signin' />
+        const { projects, profile } = this.props;
+        // if (!auth.uid) return <Redirect to='/signin' />
+        if (profile.role !== "admin") return <Redirect to='/signin' />
         return(
             <div>
                 <div className="portfolio container">
@@ -29,6 +30,7 @@ class DeleteProject extends Component {
 const mapStateToProps = (state) => {
     return {
         auth: state.firebase.auth,
+        profile: state.firebase.profile,
         projects: state.firestore.ordered.projects
     }
 }

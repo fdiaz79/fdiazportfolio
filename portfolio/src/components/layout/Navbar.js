@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import SignedInLinks from './SignedInLinks';
+import SignOutLink from './SignOutLink';
 import './Navbar.css';
 import { connect } from 'react-redux';
 
@@ -9,8 +10,8 @@ const Navbar = (props) => {
     const { auth, profile } = props;
     // console.log(auth);
     console.log(profile.role)
-    // const links = auth.uid ? <SignedInLinks /> : null;
-    const links = profile.role == 'admin' ? <SignedInLinks /> : null;
+    const links = auth.uid ? <SignOutLink /> : null;
+    const adminLinks = profile.role === 'admin' ? <SignedInLinks /> : null;
     return (
         
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,6 +29,7 @@ const Navbar = (props) => {
                     <NavLink to="/Portfolio" className="nav-item nav-link ml-4">Portfolio</NavLink>
                     <NavLink to="/Contact" className="nav-item nav-link ml-4">Contact</NavLink>
                 </div>
+                { adminLinks }
                 { links }
                 {/* <SignedInLinks /> */}
             </div>
