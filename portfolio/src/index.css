@@ -13,7 +13,7 @@ body {
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: 'Raleway', sans-serif;
   color: #3e4e6d;
-  background-image: linear-gradient(250deg,#fffffe, #f3f2ef, #cfcfcf);
+  background-image: linear-gradient(250deg,#fffffe, #f3f2ef, #cfcfcf, #d4d3d4);
   background-size: 400% 2400%;
   animation: bkganimation 15s infinite;
   z-index: -1;
